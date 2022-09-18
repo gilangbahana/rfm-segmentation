@@ -32,7 +32,7 @@ In this process, we find initial insights, such as:
 ## Listing Segmentation using RFM Analysis
 For RFM analysis (Recency, Frequency, Monetary). Following columns will be use for references:
 1. `Recency` for Recency Score
-2. `Frequency for Frequency Score
+2. `Frequency` for Frequency Score
 3. `Monetary` for Monetary Score
 
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-initial.JPG)
@@ -41,20 +41,35 @@ After columns ready to be analysed, create a ranking based on those column, and 
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-ranking.JPG)
 
 For scoring method:
-We are going to rate the listings on a scale of 5, based on their normalized value. Formula used for calculating RFM score is
-`0.15*Recency Score + 0.28*Frequency Score + 0.57*Monetary Score`
+We are going to rate the listings on a scale of 5, based on their normalized value. Then, we store the data in a new created column named RFM_Score_Total. Formula used for calculating RFM score total is `0.15*Recency Score + 0.28*Frequency Score + 0.57*Monetary Score`
 
+![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-score-total.JPG)
 
+And we can summarize the listings segmentation and description as below
+![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-summary.jpeg)
 
+## Analysis Insight
+From the listings segmentation, we got some points
 
-In order to create customer segmentation, following columns will be used for references:
-1. Creating new columns, called `payment_installments_cat`, which categorize payment installment to 4 category named:
-    - 'no debt-debt club' for payment made without or using 1 month installments
-    - 'pinjol friendly' for payment made using 2 to 6 months installments
-    - 'medium term' for payment made using 7 to 12 months installments, and
-    - 'long commitment' for payment made using more than 12 months installments
-2. Column `customer state` and `payment type` is converted to numeric using one hot encoding.
-3. Optimal number of cluster is 4, based on elbow method metric.
-![alt text](https://github.com/gilangbahana/customer-segmentation/blob/main/cust-segmentation-elbow-method.png)
-4. Then, the summary of each cluster is shown in table below:
-![alt text](https://github.com/gilangbahana/customer-segmentation/blob/main/cluster-customer-segmentation.JPG)
+- Price of top listings on average 10% lower than other listing segment. 
+- Top listing generally offers their room for daily stay, while low or lost listing offers their room only for monthly stay.
+- We can book on average 168 days in advance for top listings, while for lost listings we can book none (which means maybe the lost listings is closed permanently).
+- Low listings only give the traveler booked their listings one month in advance.
+- There’s no difference between all listings in terms of room type. Most wanted room type in every segment is entire home/apt.
+
+## Recommendation
+In order to bounce back faster in 2021, we have to focus on our Top Listings, while at the same time, applying top listings characteristics to low performance listings. 
+
+### For Top Listings
+- This is our revenue generator, we have to give ads placement in first page when traveler searching for nearby listings.
+- Creating promotional video for top listings using famous influencer.
+- Creating monthly or weekly discount for traveller if they stay longer (more than 3 days) in top listings.
+- Creating campaign competition for listings to achieve as much traveler as they could get. 
+
+### For All Listings
+- Campaign for seasonal time (for example: National Holiday).
+- Creating guidebook/guestbook to tell the traveller everything they can do in the area.
+- Creating loyalty point program for traveler (for example `platinum`, `gold`, `silver`.
+
+#### Presentation Deck
+[Airbnb Listings Segmentation using RFM Analysis Deck ](https://github.com/gilangbahana/rfm-segmentation/blob/main/New%20York%20City%20(NYC)%20Airbnb%20Listings%20Segmentation%20using%20RFM%20Analysis.pdf)
