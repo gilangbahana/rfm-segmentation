@@ -21,11 +21,11 @@ Airbnb is an online marketplace which provides homestay or tourism services. Air
 ## EDA Process
 In this process, we find initial insights, such as:
 1. Manhattan has the most total room available in NYC Airbnb listings, followed by Brooklyn, Queens, Bronx, and Staten Island.
-
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-eda-based-on-borough.JPG)
-2. Entire home/apartement type of listings is very dominant in NYC Airbnb listings, primarily in Brooklyn and Manhattan borough. While Private Room is dominant in Queens, Hotel Room and Shared Room only show very little percentages in five neighbourhoods.
 
+2. Entire home/apartement type of listings is very dominant in NYC Airbnb listings, primarily in Brooklyn and Manhattan borough. While Private Room is dominant in Queens, Hotel Room and Shared Room only show very little percentages in five neighbourhoods.
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-eda-based-on-room-type.JPG)
+
 3. Total Airbnb beds only 32% of total hotel bed / inns in NYC. With total visitors to NYC is 66.6 mil on 2019. 
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-eda-airbnb-beds-2019.JPG)
 
