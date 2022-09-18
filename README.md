@@ -2,9 +2,11 @@
 
 ## Overview / Case Background
 Airbnb is an online marketplace which provides homestay or tourism services. Airbnb presence disrupts hotel and inns market. New York City is no exception. NYC is the most populous city in US, center of finance, media, government, research, and technology. NYC is also the biggest revenue generator for Airbnb in the US, because there are always traveler going to NYC, and the amount of listings of NYC Airbnb is the largest in US. The **occupancy rate of Airbnb in NYC is only 50%**, compared to its direct competitor, hotel, is around 90% in 2019. Then, Covid-19 hits in 2020, and **Airbnb is also affected by -56% yoy** decreasing of traveler's stay in 2020. We're assigned to **increase traveler's stay in Airbnb to +40% yoy in 2021** by **maximing high performance listings and giving recommendation to low performance listings** by the end of 2021.
+
 ![alt text](nyc-airbnb-business-question.JPG)
 
 ## Possible Causes
+
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rca.JPG)
 
 ## Data Source
@@ -29,6 +31,7 @@ In this process, we find initial insights, such as:
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-eda-based-on-room-type.JPG)
 
 3. Total Airbnb beds only 32% of total hotel bed / inns in NYC. With total visitors to NYC is 66.6 mil on 2019. 
+
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-eda-airbnb-beds-2019.JPG)
 
 ## Listing Segmentation using RFM Analysis
@@ -40,6 +43,7 @@ For RFM analysis (Recency, Frequency, Monetary). Following columns will be use f
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-initial.JPG)
 
 After columns ready to be analysed, create a ranking based on those column, and normalize the rank of the listings.
+
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-ranking.JPG)
 
 For scoring method:
@@ -48,6 +52,7 @@ We are going to rate the listings on a scale of 5, based on their normalized val
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-score-total.JPG)
 
 And we can summarize the listings segmentation and description as below
+
 ![alt text](https://github.com/gilangbahana/rfm-segmentation/blob/main/nyc-rfm-summary.jpeg)
 
 ## Analysis Insight
